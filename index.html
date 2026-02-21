@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Samir Patel | Portfolio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Inter', sans-serif;
+}
+
+body{
+background:#f4f6f9;
+color:#222;
+}
+
+/* ===== HERO BANNER ===== */
+.hero{
+height:100vh;
+background:url('https://images.unsplash.com/photo-1507679799987-c73779587ccf') no-repeat center center/cover;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+position:relative;
+}
+
+.hero::after{
+content:'';
+position:absolute;
+width:100%;
+height:100%;
+background:rgba(0,0,0,0.6);
+top:0;
+left:0;
+}
+
+.hero-content{
+position:relative;
+z-index:1;
+color:white;
+max-width:800px;
+}
+
+.hero h1{
+font-size:48px;
+font-weight:700;
+}
+
+.typing{
+margin-top:15px;
+font-size:20px;
+color:#ddd;
+}
+
+/* ===== SECTION ===== */
+.section{
+padding:90px 10%;
+}
+
+.section h2{
+text-align:center;
+margin-bottom:50px;
+font-size:30px;
+font-weight:600;
+}
+
+/* ===== CARD GRID ===== */
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+gap:25px;
+}
+
+.card{
+background:white;
+border-radius:12px;
+overflow:hidden;
+box-shadow:0 10px 30px rgba(0,0,0,0.05);
+transition:0.3s;
+}
+
+.card:hover{
+transform:translateY(-8px);
+}
+
+.card img{
+width:100%;
+height:180px;
+object-fit:cover;
+}
+
+.card-content{
+padding:20px;
+}
+
+/* ===== CONTACT ===== */
+.contact-box{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+
+.contact-item{
+background:white;
+padding:25px;
+border-radius:12px;
+box-shadow:0 10px 30px rgba(0,0,0,0.05);
+text-align:center;
+}
+
+.contact-item i{
+font-size:22px;
+margin-bottom:10px;
+}
+
+/* ===== WHATSAPP FLOAT ===== */
+.whatsapp-float{
+position:fixed;
+bottom:20px;
+right:20px;
+background:#25D366;
+color:white;
+padding:16px;
+border-radius:50%;
+font-size:22px;
+box-shadow:0 8px 20px rgba(0,0,0,0.2);
+}
+
+footer{
+text-align:center;
+padding:25px;
+background:#111;
+color:white;
+}
+
+/* SKILLS NEW DESIGN */
+
+.skills-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+gap:15px;
+margin-top:20px;
+}
+
+.skill-box{
+background:white;
+padding:15px;
+border-radius:8px;
+box-shadow:0 4px 15px rgba(0,0,0,0.08);
+text-align:center;
+font-weight:500;
+transition:0.3s;
+cursor:pointer;
+}
+
+.skill-box:hover{
+background:#111;
+color:white;
+transform:translateY(-5px);
+}
+
+</style>
+</head>
+
+<body>
+  
+  
+  
+
+<!-- HERO -->
+<div class="hero">
+<div class="hero-content">
+<h1>Samir Patel</h1>
+<div class="typing">
+<span id="typing-text"></span>
+</div>
+</div>
+</div>
+
+<!-- ABOUT -->
+<div class="section" data-aos="fade-up">
+<h2>About Me</h2>
+<div class="card">
+<div class="card-content">
+I am an E-commerce Executive with 2+ years of experience managing UK and Indian marketplaces including Amazon, eBay, Tesco, Shopify, B&Q, OnBuy, TikTok Shop, Superdrug, Temu, Meesho and Flipkart. Specialized in account management and multi-marketplace operations.
+</div>
+</div>
+</div>
+
+<!-- SKILLS -->
+<div class="section" data-aos="fade-up">
+<h2>Skills</h2>
+
+<div class="skills-grid">
+
+<div class="skill-box">Amazon Seller Central</div>
+<div class="skill-box">Multi Marketplace Handling</div>
+<div class="skill-box">Product Listing Optimization</div>
+<div class="skill-box">GS1 Barcode Handling</div>
+<div class="skill-box">SEO Basics</div>
+<div class="skill-box">HTML & CSS Website Design</div>
+<div class="skill-box">Banner Design</div>
+<div class="skill-box">Logo Design</div>
+<div class="skill-box">Product Packaging Design</div>
+<div class="skill-box">Graphics Designing</div>
+<div class="skill-box">Hosting Management</div>
+<div class="skill-box">Project Management</div>
+
+</div>
+</div>
+
+<!-- Project WITH IMAGES -->
+<div class="section" data-aos="fade-up">
+<h2>Projects</h2>
+<div class="grid">
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d">
+<div class="card-content">
+<h4>Amazon Seller Central</h4>
+<p>Account management & listing optimization.</p>
+</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f">
+<div class="card-content">
+<h4>Multi Marketplace</h4>
+<p>Managing UK & Indian marketplaces.</p>
+</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1492724441997-5dc865305da7">
+<div class="card-content">
+<h4>Website & Graphics</h4>
+<p>Banner, logo & packaging design.</p>
+</div>
+</div>
+
+</div>
+</div>
+
+<!-- EXPERIENCE -->
+<div class="section" data-aos="fade-up">
+<h2>Experience</h2>
+<div class="card">
+<div class="card-content">
+<h3>LinnPoint Company</h3>
+<p>Working as E-commerce Executive for 2+ years in Bharuch, Gujarat. Managing UK shift marketplace projects and handling multiple accounts professionally.</p>
+</div>
+</div>
+</div>
+
+<!-- CONTACT -->
+<div class="section" data-aos="fade-up">
+<h2>Contact</h2>
+<div class="contact-box">
+
+<div class="contact-item">
+<i class="fas fa-phone"></i>
+<p>7041691495</p>
+</div>
+
+<div class="contact-item">
+<i class="fas fa-envelope"></i>
+<p>spatel2263@gmail.com</p>
+</div>
+
+<div class="contact-item">
+<i class="fas fa-map-marker-alt"></i>
+<p>Bharuch, Gujarat (UK Shift)</p>
+</div>
+
+</div>
+</div>
+
+<a href="https://wa.me/917041691495" class="whatsapp-float" target="_blank">
+<i class="fab fa-whatsapp"></i>
+</a>
+
+<footer>
+© 2026 Samir Patel
+</footer>
+
+<script>
+const text = "E-commerce Executive | Account Manager | Graphics Designer | Website Creator";
+let i = 0;
+function typing(){
+if(i < text.length){
+document.getElementById("typing-text").innerHTML += text.charAt(i);
+i++;
+setTimeout(typing, 40);
+}
+}
+typing();
+</script>
+
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>
+AOS.init();
+</script>
+
+</body>
+</html>
