@@ -23,9 +23,56 @@ background:#f4f6f9;
 color:#222;
 }
 
+html{
+scroll-behavior:smooth;
+}
+
+.navbar{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+background:rgba(17,17,17,0.85);
+backdrop-filter:blur(6px);
+z-index:999;
+padding:12px 8%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+.logo{
+color:#fff;
+font-weight:700;
+letter-spacing:0.4px;
+}
+
+.menu{
+display:flex;
+gap:18px;
+list-style:none;
+}
+
+.menu a{
+text-decoration:none;
+color:#fff;
+font-size:14px;
+font-weight:500;
+transition:0.3s;
+}
+
+.menu a:hover{
+color:#6ec1ff;
+}
+
+.section[id]{
+scroll-margin-top:80px;
+}
+
 /* ===== HERO BANNER ===== */
 .hero{
 height:100vh;
+padding-top:56px;
 background:url('https://images.unsplash.com/photo-1507679799987-c73779587ccf') no-repeat center center/cover;
 display:flex;
 justify-content:center;
@@ -65,6 +112,11 @@ color:#ddd;
 /* ===== SECTION ===== */
 .section{
 padding:90px 10%;
+background:#eef4ff;
+}
+
+.section:nth-of-type(even){
+background:#f2f9f5;
 }
 
 .section h2{
@@ -82,11 +134,12 @@ gap:25px;
 }
 
 .card{
-background:white;
+background:#fdfdff;
 border-radius:12px;
 overflow:hidden;
 box-shadow:0 10px 30px rgba(0,0,0,0.05);
 transition:0.3s;
+border:1px solid #e6ecff;
 }
 
 .card:hover{
@@ -111,11 +164,12 @@ gap:20px;
 }
 
 .contact-item{
-background:white;
+background:#ffffff;
 padding:25px;
 border-radius:12px;
 box-shadow:0 10px 30px rgba(0,0,0,0.05);
 text-align:center;
+border:1px solid #e6ecff;
 }
 
 .contact-item i{
@@ -153,7 +207,7 @@ margin-top:20px;
 }
 
 .skill-box{
-background:white;
+background:#ffffff;
 padding:15px;
 border-radius:8px;
 box-shadow:0 4px 15px rgba(0,0,0,0.08);
@@ -161,21 +215,47 @@ text-align:center;
 font-weight:500;
 transition:0.3s;
 cursor:pointer;
+border:1px solid #dde8ff;
 }
 
 .skill-box:hover{
-background:#111;
+background:#2f5fb5;
 color:white;
 transform:translateY(-5px);
+}
+
+@media(max-width:768px){
+.navbar{
+flex-direction:column;
+gap:10px;
+padding:10px 5%;
+}
+
+.menu{
+flex-wrap:wrap;
+justify-content:center;
+gap:12px;
+}
+
+.hero h1{
+font-size:38px;
+}
 }
 
 </style>
 </head>
 
 <body>
-  
-  
-  
+<nav class="navbar">
+<div class="logo">Samir Patel</div>
+<ul class="menu">
+<li><a href="#about">About</a></li>
+<li><a href="#skills">Skills</a></li>
+<li><a href="#projects">Projects</a></li>
+<li><a href="#experience">Experience</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+</nav>
 
 <!-- HERO -->
 <div class="hero">
@@ -188,7 +268,7 @@ transform:translateY(-5px);
 </div>
 
 <!-- ABOUT -->
-<div class="section" data-aos="fade-up">
+<div class="section" id="about" data-aos="fade-up">
 <h2>About Me</h2>
 <div class="card">
 <div class="card-content">
@@ -198,7 +278,7 @@ I am an E-commerce Executive with 2+ years of experience managing UK and Indian 
 </div>
 
 <!-- SKILLS -->
-<div class="section" data-aos="fade-up">
+<div class="section" id="skills" data-aos="fade-up">
 <h2>Skills</h2>
 
 <div class="skills-grid">
@@ -220,7 +300,7 @@ I am an E-commerce Executive with 2+ years of experience managing UK and Indian 
 </div>
 
 <!-- Project WITH IMAGES -->
-<div class="section" data-aos="fade-up">
+<div class="section" id="projects" data-aos="fade-up">
 <h2>Projects</h2>
 <div class="grid">
 
@@ -252,7 +332,7 @@ I am an E-commerce Executive with 2+ years of experience managing UK and Indian 
 </div>
 
 <!-- EXPERIENCE -->
-<div class="section" data-aos="fade-up">
+<div class="section" id="experience" data-aos="fade-up">
 <h2>Experience</h2>
 <div class="card">
 <div class="card-content">
@@ -263,7 +343,7 @@ I am an E-commerce Executive with 2+ years of experience managing UK and Indian 
 </div>
 
 <!-- CONTACT -->
-<div class="section" data-aos="fade-up">
+<div class="section" id="contact" data-aos="fade-up">
 <h2>Contact</h2>
 <div class="contact-box">
 
