@@ -131,6 +131,43 @@ height:180px;
 object-fit:cover;
 }
 
+.project-banner{
+height:180px;
+display:flex;
+align-items:center;
+justify-content:center;
+background:linear-gradient(135deg,#101827,#173f5f,#00a6a6);
+color:#fff;
+font-size:30px;
+font-weight:700;
+letter-spacing:2px;
+}
+.project-tags{
+display:flex;
+flex-wrap:wrap;
+gap:8px;
+margin:14px 0;
+}
+.project-tags span{
+background:rgba(0,224,255,0.14);
+border:1px solid rgba(0,224,255,0.35);
+color:#9cefff;
+padding:6px 10px;
+border-radius:20px;
+font-size:12px;
+}
+.project-features{
+padding-left:18px;
+margin:12px 0;
+line-height:1.8;
+font-size:14px;
+}
+.project-note{
+margin-top:14px;
+font-size:12px;
+color:#b8c7d1;
+}
+
 .card-content{
 padding:20px;
 color:#fff;
@@ -321,6 +358,27 @@ I am an E-commerce Executive with 2+ years of experience managing UK and Indian 
 <div class="card-content">
 <h4>Website & Graphics</h4>
 <p>Banner, logo & packaging design.</p>
+</div>
+</div>
+
+
+<div class="card">
+<div class="project-banner">SAM LENS</div>
+<div class="card-content">
+<h4>SAM Lens – Product Asset Studio</h4>
+<p>A locally run, browser-based Amazon product research and asset management tool built to simplify product lookup, listing preparation and image workflows.</p>
+<div class="project-tags">
+<span>TypeScript</span><span>Node.js</span><span>Express</span><span>SQLite</span><span>HTML & CSS</span>
+</div>
+<ul class="project-features">
+<li>Search products using ASINs or Amazon URLs across supported marketplaces.</li>
+<li>View product information and download available product images.</li>
+<li>Organise saved products in separate project workspaces.</li>
+<li>Edit listing content and export data to CSV, Excel and JSON.</li>
+<li>Manage image downloads, ZIP exports and search/download history.</li>
+</ul>
+<p><strong>Deployment:</strong> Runs locally on the user's computer at 127.0.0.1:5000. It is not a hosted public web app.</p>
+<p class="project-note">Source code is currently kept in a private GitHub repository.</p>
 </div>
 </div>
 
