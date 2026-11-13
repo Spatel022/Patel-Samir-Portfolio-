@@ -55,7 +55,7 @@ button{font:inherit;cursor:pointer;border:0}.app{display:grid;grid-template-colu
 </main></div><div class="toast" id="toast"></div>
 <script>
 const money=n=>'₹'+Math.round(n).toLocaleString('en-IN');
-const busModels=[{name:'CityLine 2-Axle',type:'Standard AC',price:1800000,capacity:40},{name:'Highway Deluxe',type:'Luxury AC',price:2800000,capacity: sleeper=36},{name:'Mini Intercity',type:'Mini Bus',price:1200000,capacity:24}];
+const busModels=[{name:'CityLine 2-Axle',type:'Standard AC',price:1800000,capacity:40},{name:'Highway Deluxe',type:'Luxury AC',price:2800000,capacity:36},{name:'Mini Intercity',type:'Mini Bus',price:1200000,capacity:24}];
 const routeSeed=[{id:1,from:'Bharuch',to:'Surat',km:75,revenue:85000,expense:35000,busId:1,active:true},{id:2,from:'Bharuch',to:'Vadodara',km:80,revenue:85000,expense:35000,busId:2,active:true},{id:3,from:'Vadodara',to:'Ahmedabad',km:110,revenue:110000,expense:47000,busId:null,active:false},{id:4,from:'Surat',to:'Ahmedabad',km:265,revenue:145000,expense:65000,busId:null,active:false}];
 const initial={day:1,balance:5000000,buses:[{id:1,name:'SAM Express 01',model:'Highway Deluxe',type:'Luxury AC',price:2800000,capacity:36},{id:2,name:'SAM Express 02',model:'CityLine 2-Axle',type:'Standard AC',price:1800000,capacity:40}],routes:routeSeed,staff:[{name:'Rajesh Parmar',role:'Driver'},{name:'Imran Shaikh',role:'Driver'},{name:'Karan Vasava',role:'Conductor'},{name:'Amit Patel',role:'Operations Manager'}],ledger:[],activity:['Company founded in Bharuch','Two buses added to the fleet'],totalRevenue:0,totalExpenses:0,todayRevenue:170000,todayExpenses:70000};
 let state;try{state=JSON.parse(localStorage.getItem('sambus-save'))||initial}catch(e){state=initial}
